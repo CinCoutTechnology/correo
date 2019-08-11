@@ -7,5 +7,6 @@
 
     $contenido = "Nombre: " .$nombre . "\Mobile: ".$mobile "\nCorreo: ".$correo . "\nMensaje: " .$mensaje
     mail($destino,"Contacto",$contenido);
-    header("location: index.html");
+    echo "<script> alert('Correo enviado')</script>"
+    echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
 ?>
